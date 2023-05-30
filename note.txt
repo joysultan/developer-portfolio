@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ripon Portfolio</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- top banner start -->
+    
+    <section class="top-banner">
+        <div class="half-width">
+            <h1>welcome to</h1>
+        <h1> <span class="orange-color">Raimun Ripon</span> World</h1>
+        <h3>Iam ripon Mainshe amare koy adai amar kaj</h3>
+        <p>You might saw me jumping, climbing buildings, and stopping trains. But nobody pays me a dime for that work. That's why I am learning and mastering web development. I will not stop until I become the Web Development Hero.</p>
+        <a href="https://www.facebook.com/raimunrahman.ripon" target="_blank">Hire Me</a>
+        </div>
+        <div class="half-width block">
+            <img src="img/my-bg (1).png" alt="ripon">
+        </div>
+    </section>
+    <!-- dream big start -->
+    <section class="dream-big">
+        <div class="half-width">
+            <img src="img/my-bg (1).png" alt="">
+        </div>
+        <div class="half-width c-padding">
+            <h1>dream big</h1>
+            <h2>become a web developer</h2>
+            <p>I already learned the basic HTML and CSS. I can build any simple website. I can even teach my grandma how to make simple website. My goal is to build 3 websites and learn advanced topics.</p>
+            <a href="#">download resume</a>
+        </div>
+
+    </section>
+    <!-- dream big end -->
+    <!-- experience start -->
+    <h1>experiences</h1>
+    <section class="experience">    
+        <div class="developer c-margin">
+            <h2>Full stack developer</h2>
+            <h3 class="orange-color">2023-Present | Pro Level Developer</h3>
+            <p>I am the master of HTML, CSS and Javascript. I know everything needed to make a website function, efficient. I didn't stop with the web. I went beyond with most popular Javascript framework called Vue JS. I even know the deployment, server and security. I will give you 100% web solution.</p>
+        </div>
+        <div class="developer border">
+            <h2>baby web developer</h2>
+            <h3 class="orange-color">2023-2025 | Learn with Joy sultan </h3>
+            <p>hey didn't offer me a job. But I made myself as a remove web developer. I made their website and showed it to them. They liked it. And uploaded the content. It was fun working at Learn with Joy Sultan.</p>
+        </div>
+    </section>
+       <!-- experiences end -->
+       <!-- footer start -->
+       <footer>
+        <p>© Joy Sultan 2022, a Junior Proggramer initiative.</p>
+    </footer>
+     <!-- footer end -->
+</body>
+</html>
+
+
+
+
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+
+}
+/* top banner star */
+
+h1{
+    font-size: 40px;
+}
+.top-banner{
+    background-image: url(img/top-banner.png);
+    background-repeat: no-repeat;
+   
+
+}
+.orange-color{
+    color: orange;
+
+}
+.top-banner{
+   display: flex;
+
+}
+.half-width{
+    width: 50%;
+    padding-left: 2%;
+
+}
+.half-width img{
+    width: 90%;
+
+}
+.half-width a{
+    text-decoration: none;
+    background: linear-gradient(45deg, lightsalmon, tomato);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: .3s all ease-in;
+
+
+}
+.half-width a:hover{
+    background-image: linear-gradient(#87CEEB,lightpink);;
+}
+/* top banner end */
+
+
+/* dream big start */
+
+.dream-big{
+    display: flex;
+    margin-top: 120px;
+    background-image: url(img/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 10%;
+}
+/* dream big end */
+
+/* experiences start */
+.experience{
+    display: flex;
+    margin-bottom: 60px;
+    background-image: url(img/exp-bg.png);
+    background-repeat: no-repeat;
+   
+}
+
+.developer{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 10px 10px 40px gray;
+    padding: 20px;
+    border-left: 7px solid blue;
+    transition: .3s all ease-in;
+}
+.developer:hover{
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 10%);
+}
+.developer h2{
+    font-size: 40px;
+}
+.border{
+    border-left: 7px solid orange;
+}
+.c-margin{
+    margin-left: 120px;
+}
+
+/* experiences end */
+/* footer start */
+footer{
+    text-align: center;
+    
+    
+}
+.block{}
+.block img{}
+/* footer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) {
+    h1 {
+        font-size: 25px;
+    }
+    .half-width a{
+        padding: 8px 20px;
+    }
+    h3{
+        margin: 0;
+        padding: 0;
+    }
+    .top-banner{
+       display: flex;
+       justify-content: center;
+    }
+    .half-width{
+            width: 95%;
+    }
+    .top-banner{
+        display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    }
+    .dream-big{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        background-size: 50px ;
+    }
+    .dream-big a{
+        padding: 8px 10px;
+    }
+    .dream-big h2{
+        font-size: 20px;
+    }
+    .half-width img{
+        width: 100%;
+    }
+    .experience{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: 28px;
+    }
+    .developer{
+        width: 70%;
+        padding: 20px;
+        margin-right: 40%;
+    }
+    .c-margin{
+        margin-bottom: 30px;
+    }
+    .border{
+        margin-left: 120px;
+    }
+    .developer h2{
+        font-size: 20px;
+
+    }
+ }
+ 
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    h1 {
+        font-size: 25px;
+    }
+    .half-width a{
+        padding: 8px 20px;
+    }
+    h3{
+        margin: 0;
+        padding: 0;
+    }
+    .top-banner{
+       display: flex;
+       justify-content: center;
+    }
+    .half-width{
+            width: 95%;
+    }
+    .top-banner{
+        display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    }
+    .dream-big{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: 70px;
+    }
+    .half-width img{
+        width: 100%;
+    }
+    .experience{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: 60px;
+    }
+    .developer{
+        width: 70%;
+        padding: 15px;
+        margin-right: 18%;
+    }
+    .c-margin{
+        margin-bottom: 30px;
+    }
+    .border{
+        margin-left: 120px;
+    }
+    .developer h2{
+        font-size: 30px;
+
+    }
+ }
+ 
+  /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 30px;
+    }
+    .half-width a{
+        padding: 10px 30px;
+    }
+    .half-width{
+        width: 80%;
+    }
+    .half-width img{
+        width: 100%;
+    }
+    .top-banner{
+        display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    }
+    .dream-big{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        background-size: 90px;
+    }
+    .experience{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: 75px;
+    }
+    .developer{
+        width: 70%;
+        padding: 15px;
+    }
+    .c-margin{
+        margin-bottom: 30px;
+    }
+    .border{
+        margin-left: 120px;
+    }
+    .developer h2{
+        font-size: 35px;
+
+    }
+   
+ }
+ 
+ /* Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+    /* .experience{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .developer{
+        width: 70%;
+    }
+    .c-margin{
+        margin-bottom: 30px;
+    }
+    .border{
+        margin-left: 120px;
+    } */
+    .developer h2{
+        font-size: 30px;
+    }
+    .developer{
+        margin-right: 30px;
+    }
+ }
+ 
+  /* Extra large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) and (max-width:1399.98px){
+    .developer h2{
+        font-size: 39px;
+    }
+ }
+  /* Extra Extra large devices (large desktops, 1400px and up) */
+ @media (min-width: 1400px) {
+     
+ }
